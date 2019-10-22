@@ -1,5 +1,7 @@
 {
   "name": "GoodGrabTab",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

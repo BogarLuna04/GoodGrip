@@ -1,0 +1,21 @@
+<div >
+  <div class="head" style="text-align: center;">
+    <!--<img class="imagen" src="assets/img/usuario.jpg" />    -->  
+    <h1>Menu</h1>
+  </div>
+
+    <!-- Checked Checkbox 
+    <ion-checkbox color="primary"></ion-checkbox>
+    <ion-checkbox color="secondary"></ion-checkbox>
+    <ion-checkbox color="danger"></ion-checkbox>
+    <ion-checkbox color="light"></ion-checkbox>
+    <ion-checkbox color="dark"></ion-checkbox>
+  
+       Checkboxes in a List -->
+    <ion-list>
+      <ion-item *ngFor="let entry of form">
+        <ion-label>{{entry.val}}</ion-label>
+      </ion-item>
+    </ion-list>
+      <ion-button class="boton" [routerLink]="['/hoy']" expand="block" fill="outline">Seleccionar</ion-button>
+  </div>

@@ -21,7 +21,9 @@ const routes: Routes = [
   {path:"menu", component:MenuComponent,},
   {path:"hoy", component:HoyComponent,},
 
-  {path:'',redirectTo:"/login",  pathMatch: 'full'}
+  {path:'',redirectTo:"/login",  pathMatch: 'full'},
+  { path: 'login1', loadChildren: './login/login.module#LoginPageModule' }
+
 
 ];
 @NgModule({

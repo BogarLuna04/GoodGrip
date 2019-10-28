@@ -12,10 +12,9 @@
     <ion-checkbox color="dark"></ion-checkbox>
   
        Checkboxes in a List -->
-    <ion-list>
-      <ion-item *ngFor="let entry of form">
-        <ion-label>{{entry.val}}</ion-label>
-      </ion-item>
-    </ion-list>
-      <ion-button class="boton" [routerLink]="['/hoy']" expand="block" fill="outline">Seleccionar</ion-button>
+
+      <ion-button class="boton" [routerLink]="['/hoy']" expand="block" fill="outline">Nuevo Juego</ion-button>
+      <ion-button class="boton" [routerLink]="['/historial']" expand="block" fill="outline">Historial</ion-button>
+      <ion-button class="boton" [routerLink]="['/conexiones']" expand="block" fill="outline">Conexiones</ion-button>
+      <ion-button class="boton" [routerLink]="['/tutorial']" expand="block" fill="outline">Tutorial</ion-button>
   </div>

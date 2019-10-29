@@ -30,5 +30,14 @@
   </ion-col>
   </ion-row>
  
+  <calendar
+   [eventSource]="eventSource"
+   [calendarMode]="calendar.mode"
+   [currentDate]="calendar.currentDate"
+   startHour="6"
+   endHour ="20"
+   step = "30"
+   startingDayWeek = "1">
+  </calendar>
 
 </ion-content>

@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HistorialPage implements OnInit {
 
+  eventSource = [];
+
+  calendar = {
+    mode: 'month',
+    currentDate: new Date()
+  }
+
   constructor() { }
 
   ngOnInit() {
@@ -15,7 +22,7 @@ export class HistorialPage implements OnInit {
   changeMode(mode){
 
   }
-  
+
   next(){
 
   }

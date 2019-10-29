@@ -20,14 +20,16 @@ export class HistorialPage implements OnInit {
   }
 
   changeMode(mode){
-
+    this.calendar.mode = mode;
   }
 
   next(){
-
+    var swiper = document.querySelector('.swiper-container')['swiper'];
+  swiper.slideNext();
   }
 
   back(){
-
+    var swiper = document.querySelector('.swiper-container')['swiper'];
+  swiper.slidePrev();
   }
 }

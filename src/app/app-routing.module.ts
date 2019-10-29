@@ -7,7 +7,6 @@ import { RegistroComponent } from './registro/registro.component';
 import { ConexionesComponent } from './conexiones/conexiones.component';
 import { MenuComponent } from './menu/menu.component';
 import { HoyComponent } from './hoy/hoy.component';
-import {HistorialComponent} from './historial/historial.component'
 import { TutorialComponent } from './tutorial/tutorial.component';
  
 const routes: Routes = [
@@ -22,11 +21,12 @@ const routes: Routes = [
   {path:"conexiones", component:ConexionesComponent,},
   {path:"menu", component:MenuComponent,},
   {path:"hoy", component:HoyComponent,},
-  {path:"historial", component:HistorialComponent,},
   {path:"tutorial", component:TutorialComponent,},
 
   {path:'',redirectTo:"/login",  pathMatch: 'full'},
-  { path: 'login1', loadChildren: './login/login.module#LoginPageModule' }
+  { path: 'login1', loadChildren: './login/login.module#LoginPageModule' },
+  { path: 'historial', loadChildren: './historial/historial.module#HistorialPageModule' }
+
 
 
 ];

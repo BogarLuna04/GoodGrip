@@ -7,19 +7,15 @@
 </ion-header>
 
 <ion-content>
-    <ion-img src="assets/img/Golfista.jpg"></ion-img>
-    <ion-button routerLink="/login1" size = "large" >Iniciar sesión</ion-button>
-    <ion-button [routerLink]="['/registro']" size = "large" >Registrarse</ion-button>
+    <ion-col class="ion-text-center">
+        <ion-img src="assets/img/Golfista.jpg"></ion-img>
+    </ion-col>
+    <ion-row class="ion-text-center">
+      <ion-col class="ion-text-center">
+          <ion-button routerLink="/login1" size = "large" >Iniciar sesión</ion-button>
+      </ion-col>
+      <ion-col class="ion-text-center">
+          <ion-button [routerLink]="['/registro']" size = "large" >Registrarse</ion-button>
+      </ion-col>
+    </ion-row>
 </ion-content>
-<!--<div >
-  <div class="head" style="text-align: center;">
-    <img class="imagen" src="assets/img/usuario.jpg" /> 
-    <h1>Bienvenido</h1>
-  </div>
-
-  <p>
-    <ion-button class="boton" [routerLink]="['/inicioSesion']" expand="block" fill="outline">Iniciar Sesion</ion-button>
-    <ion-button class="boton" [routerLink]="['/registro']" expand="block" fill="outline">Registro</ion-button>
-  </p>
-</div>
-   -->  

@@ -17,7 +17,6 @@ import { MenuComponent } from './menu/menu.component';
 import { HoyComponent } from './hoy/hoy.component';
 import { EstadisticasComponent } from './estadisticas/estadisticas.component';
 import { DiasJugadosComponent } from './dias-jugados/dias-jugados.component';
-import { HistorialComponent } from './historial/historial.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
 
 @NgModule({
@@ -31,7 +30,6 @@ import { TutorialComponent } from './tutorial/tutorial.component';
     HoyComponent,
     EstadisticasComponent,
     DiasJugadosComponent,
-    HistorialComponent,
     TutorialComponent,
   ],
   entryComponents: [],

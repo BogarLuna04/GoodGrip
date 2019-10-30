@@ -14,12 +14,6 @@
     background: #c1daeb; 
     color: #ffffff;
     }
-.head{
-    height: 15vh;
-    width: 100vw;
-    padding-top: 2%;
-    background: #c1daeb;
-}
 .imagen{
     background: #c1daeb;
     height: 6vh;
@@ -56,4 +50,15 @@
     margin-right: auto;
     margin-top: auto;
     width: 35%;
+}
+.head{
+    --background: #c1daeb;
+    height: 10vh;
+    width: 100vw;
+    padding-top: 2%;
+}
+.titulo{
+   font-size: 30px;
+    --background:#c1daeb;
+    --color:#000000;
 }

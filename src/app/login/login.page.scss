@@ -7,14 +7,14 @@
 }
 .head{
     --background: #c1daeb;
-    height: 15vh;
+    height: 10vh;
     width: 100vw;
     padding-top: 2%;
 }
 .titulo{
-    --font-size: 40px;
-    --background:#010405;
-    --color:#ffffff;
+    font-size: 30px;
+    --background:#ffffff;
+    --color:#000000;
 }
 .boton{
     position: relative;
@@ -28,4 +28,4 @@
     margin-left: auto;
     margin-right: auto;
     color: #ffffff;
- }
+ } 

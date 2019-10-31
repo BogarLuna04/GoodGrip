@@ -9,7 +9,15 @@ import { CalendarComponent } from 'ionic2-calendar/calendar';
 })
 export class HistorialPage implements OnInit {
 
+  @ViewChild(CalendarComponent,{static:false}) myCalendar:CalendarComponent;
   eventSource = [];
+
+  event = {
+    title: '',
+    startTime: '',
+    endTime: '',
+    allDay: false
+  };
 
   calendar = {
     mode: 'month',
@@ -20,6 +28,7 @@ export class HistorialPage implements OnInit {
   viewTitle = '';
 
   constructor() { }
+
 
   ngOnInit() {
   }
@@ -41,6 +50,5 @@ export class HistorialPage implements OnInit {
   onViewTitleChanged(title){
     this.viewTitle = title;
   }
-
 }
 

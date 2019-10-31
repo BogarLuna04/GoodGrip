@@ -34,7 +34,9 @@ const routes: Routes = [
   { path: 'menique-d', loadChildren: './menique-d/menique-d.module#MeniqueDPageModule' },
   { path: 'palma-d', loadChildren: './palma-d/palma-d.module#PalmaDPageModule' },
   { path: 'palma-i', loadChildren: './palma-i/palma-i.module#PalmaIPageModule' },
-  { path: 'conexiones', loadChildren: './conexiones/conexiones.module#ConexionesPageModule' }
+  { path: 'conexiones', loadChildren: './conexiones/conexiones.module#ConexionesPageModule' },
+  { path: 'estadisticas', loadChildren: './estadisticas/estadisticas.module#EstadisticasPageModule' }
+
 
 
 

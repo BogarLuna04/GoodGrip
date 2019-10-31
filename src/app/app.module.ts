@@ -12,12 +12,12 @@ import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 import { Tab1PageModule } from './tab1/tab1.module';
 import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
 import { RegistroComponent } from './registro/registro.component';
-import { ConexionesComponent } from './conexiones/conexiones.component';
 import { MenuComponent } from './menu/menu.component';
 import { HoyComponent } from './hoy/hoy.component';
 import { EstadisticasComponent } from './estadisticas/estadisticas.component';
 import { DiasJugadosComponent } from './dias-jugados/dias-jugados.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
+import { BLE } from '@ionic-native/ble/ngx';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,6 @@ import { TutorialComponent } from './tutorial/tutorial.component';
     BienvenidaComponent,
     InicioSesionComponent,
     RegistroComponent,
-    ConexionesComponent,
     MenuComponent,
     HoyComponent,
     EstadisticasComponent,
@@ -42,6 +41,7 @@ import { TutorialComponent } from './tutorial/tutorial.component';
   providers: [
     StatusBar,
     SplashScreen,
+    BLE,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

@@ -1,10 +1,17 @@
-<ion-header>
+<!--
+  <ion-header>
   <ion-toolbar>
     <ion-title size = "large" color = "tertiary" style="text-align:center">
       GoodGrip
     </ion-title>
   </ion-toolbar>
 </ion-header>
+-->
+<ion-header>
+    <ion-toolbar class = "head">
+      <ion-title class="titulo" style="text-align:center" >GoodGrip</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
 <ion-content>
     <ion-col class="ion-text-center">
@@ -14,6 +21,8 @@
       <ion-col class="ion-text-center">
           <ion-button routerLink="/login1" size = "large" >Iniciar sesión</ion-button>
       </ion-col>
+    </ion-row>
+    <ion-row>
       <ion-col class="ion-text-center">
           <ion-button [routerLink]="['/registro']" size = "large" >Registrarse</ion-button>
       </ion-col>

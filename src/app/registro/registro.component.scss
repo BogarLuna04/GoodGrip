@@ -4,21 +4,16 @@
     background: #1375B2; 
 }
 .boton{
-    position: relative;
+    /*position: relative;
     width: 60%;
     height: 5vh;
     top: 10%;
-    background: #43689c; 
+    
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;*/
+    background: #c1daeb; 
     color: #ffffff;
     }
-.head{
-    height: 15vh;
-    width: 100vw;
-    padding-top: 2%;
-    background: #c1daeb;
-}
 .imagen{
     background: #c1daeb;
     height: 6vh;
@@ -48,4 +43,22 @@
     background: #A9D42D ;
     margin-left: auto;
     margin-right: auto;
+}
+.icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    width: 35%;
+}
+.head{
+    --background: #c1daeb;
+    height: 10vh;
+    width: 100vw;
+    padding-top: 2%;
+}
+.titulo{
+   font-size: 30px;
+    --background:#c1daeb;
+    --color:#000000;
 }

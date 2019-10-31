@@ -1,0 +1,77 @@
+<!-- <div >
+    <div class="head" style="text-align: center;">
+      <h1>Conexiones</h1>
+      <img src="GoodGrip/src/app/b" />      
+    </div>
+
+  Checked Checkbox 
+  <ion-checkbox color="primary"></ion-checkbox>
+  <ion-checkbox color="secondary"></ion-checkbox>
+  <ion-checkbox color="danger"></ion-checkbox>
+  <ion-checkbox color="light"></ion-checkbox>
+  <ion-checkbox color="dark"></ion-checkbox>
+
+     Checkboxes in a List 
+    <ion-list>
+      <ion-item  class="dispositivos">   
+        <ion-label >Buscar Dispositivo</ion-label>
+        <ion-select>
+          <ion-select-option  class="dispositivos" value="1">Guante1</ion-select-option>
+          <ion-select-option value="2">Guante2</ion-select-option>
+          <ion-select-option  class="dispositivos" value="3">Guante3</ion-select-option>
+          <ion-select-option value="4">Guante4</ion-select-option>
+          <ion-select-option  class="dispositivos" value="5">Guante5</ion-select-option>
+          <ion-select-option value="6">Guante6</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+  <ion-list>
+    <ion-item *ngFor="let entry of form">
+      <ion-label>{{entry.val}}</ion-label>
+    </ion-item>
+  </ion-list>
+    <ion-button class="boton" [routerLink]="['/menu']" expand="block" fill="outline">Seleccionar</ion-button>
+</div>-->
+<!--
+<ion-header>
+    <ion-toolbar>
+      <ion-title style="text-align: left">
+        BLE Scanner
+      </ion-title>
+      <ion-button (click)="Scan()" slot="end">
+      <ion-icon name="Bluetooth"></ion-icon>Scan
+    </ion-button>
+    </ion-toolbar>
+  
+  </ion-header>
+  -->
+  <ion-header>
+      <ion-toolbar class = "head">
+        <ion-buttons  slot = "start">
+          <ion-back-button text="" icon="arrow-back"></ion-back-button>
+        </ion-buttons>
+        <ion-title class="titulo" >Conexiones</ion-title>
+        <ion-buttons  slot = "end">
+            <ion-button (click)="Scan()" slot="end">
+                <ion-icon name="Bluetooth"></ion-icon>Scan
+              </ion-button>
+          </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    
+
+
+
+
+  <ion-content>
+      
+    <ion-list>
+      <ion-card-content ion-item *ngFor="let device of devices">
+        <p>{{device.name || 'Unnamed'}}</p>
+        <p>{{device.id}}</p>
+        <p> RSSI: {{device.rssi}}</p>
+      </ion-card-content>
+    </ion-list>
+  
+  </ion-content>

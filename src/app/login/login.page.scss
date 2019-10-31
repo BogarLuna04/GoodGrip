@@ -5,3 +5,31 @@
     margin-top: auto;
     width: 35%;
 }
+.head{
+    --background: #c1daeb;
+    height: 10vh;
+    width: 100vw;
+    padding-top: 2%;
+}
+.titulo{
+    font-size: 30px;
+    --background:#ffffff;
+    --color:#000000;
+}
+.boton{
+    position: relative;
+    width: 70%;
+    height: 5vh;
+    top: 0%;
+    background: #3880ff; 
+    border-radius: 8px;
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    font-size: 30px;
+ } 
+ .label1{
+     font-size: 25px;
+ }

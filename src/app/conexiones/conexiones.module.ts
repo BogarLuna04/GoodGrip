@@ -5,14 +5,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HistorialPage } from './historial.page';
-
-import { NgCalendarModule} from 'ionic2-calendar';
+import { ConexionesPage } from './conexiones.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: HistorialPage
+    component: ConexionesPage
   }
 ];
 
@@ -21,9 +19,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes),
-    NgCalendarModule
+    RouterModule.forChild(routes)
   ],
-  declarations: [HistorialPage]
+  declarations: [ConexionesPage]
 })
-export class HistorialPageModule {}
+export class ConexionesPageModule {}

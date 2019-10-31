@@ -1,9 +1,9 @@
-<div >
+<!--<div >
   <div class="head" style="text-align: center;">
-    <!--<img class="imagen" src="assets/img/usuario.jpg" />    -->  
+    <!--<img class="imagen" src="assets/img/usuario.jpg" />  
     <h1 class="head">LOBBY</h1>
   </div>
-
+-->
     <!-- Checked Checkbox 
     <ion-checkbox color="primary"></ion-checkbox>
     <ion-checkbox color="secondary"></ion-checkbox>
@@ -12,9 +12,20 @@
     <ion-checkbox color="dark"></ion-checkbox>
   
        Checkboxes in a List -->
+       <ion-header>
+          <ion-toolbar class = "head">
+            <ion-buttons  slot = "start">
+              <ion-back-button text="" icon="arrow-back"></ion-back-button>
+            </ion-buttons>
+            <ion-title class="titulo" >LOBBY</ion-title>
+          </ion-toolbar>
+        </ion-header>
+
+      <ion-content>
 
       <ion-button class="boton" [routerLink]="['/hoy']" expand="block" fill="outline">Nuevo Juego</ion-button>
       <ion-button class="boton" [routerLink]="['/historial']" expand="block" fill="outline">Historial</ion-button>
       <ion-button class="boton" [routerLink]="['/conexiones']" expand="block" fill="outline">Conexiones</ion-button>
       <ion-button class="boton" [routerLink]="['/tutorial']" expand="block" fill="outline">Tutorial</ion-button>
-  </div>
+        </ion-content>
+  

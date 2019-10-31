@@ -1,11 +1,18 @@
 <ion-header>
   <ion-toolbar >
-    <ion-title size="large" >
-      <ion-button  href="#" fill="clear">
-        <ion-icon name="arrow-back"></ion-icon>
-        </ion-button>
-      Iniciar sesión
-    </ion-title>
+    <ion-row>
+      <ion-col size="2">
+          <ion-button  href="#" fill="clear">
+            <ion-icon name="arrow-back"></ion-icon>
+          </ion-button>
+      </ion-col >
+      <ion-col size="7">
+          <ion-title size="small" > 
+              Iniciar sesión
+          </ion-title>
+        </ion-col>
+      
+    </ion-row> 
   </ion-toolbar>
 </ion-header>
 
@@ -23,5 +30,6 @@
     <ion-input type ="password" name="password"></ion-input>
   </ion-item>
 <br>
-<ion-button expand="block" [routerLink]="['/conexiones']" > Comenzar </ion-button>  
+<ion-button expand="block" [routerLink]="['/menu']" > Comenzar </ion-button>  
+
 </ion-content>

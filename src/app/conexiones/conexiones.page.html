@@ -1,5 +1,4 @@
-           
-  <!-- <div >
+<!-- <div >
     <div class="head" style="text-align: center;">
       <h1>Conexiones</h1>
       <img src="GoodGrip/src/app/b" />      
@@ -37,17 +36,18 @@
 
 <ion-header>
     <ion-toolbar>
-      <ion-title>
+      <ion-title style="text-align: left">
         BLE Scanner
       </ion-title>
       <ion-button (click)="Scan()" slot="end">
-        <ion-icon name="Bluetooth"></ion-icon>
-        <p>Scan</p>
-      </ion-button>
+      <ion-icon name="Bluetooth"></ion-icon>Scan
+    </ion-button>
     </ion-toolbar>
+  
   </ion-header>
   
   <ion-content>
+      
     <ion-list>
       <ion-card-content ion-item *ngFor="let device of devices">
         <p>{{device.name || 'Unnamed'}}</p>
@@ -55,5 +55,5 @@
         <p> RSSI: {{device.rssi}}</p>
       </ion-card-content>
     </ion-list>
-  </ion-content>
   
+  </ion-content>

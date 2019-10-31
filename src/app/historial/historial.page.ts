@@ -1,20 +1,34 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { CalendarComponent } from 'ionic2-calendar/calendar';
 
 @Component({
   selector: 'app-historial',
   templateUrl: './historial.page.html',
   styleUrls: ['./historial.page.scss'],
+  
 })
 export class HistorialPage implements OnInit {
 
+  @ViewChild(CalendarComponent,{static:false}) myCalendar:CalendarComponent;
   eventSource = [];
+
+  event = {
+    title: '',
+    startTime: '',
+    endTime: '',
+    allDay: false
+  };
 
   calendar = {
     mode: 'month',
-    currentDate: new Date()
+    currentDate: new Date(),
+    formatMonthTitle: 'MMMM \'de\' yyyy'
   }
 
+  viewTitle = '';
+
   constructor() { }
+
 
   ngOnInit() {
   }
@@ -32,4 +46,9 @@ export class HistorialPage implements OnInit {
     var swiper = document.querySelector('.swiper-container')['swiper'];
   swiper.slidePrev();
   }
+
+  onViewTitleChanged(title){
+    this.viewTitle = title;
+  }
 }
+

@@ -18,6 +18,7 @@ import { HoyComponent } from './hoy/hoy.component';
 import { EstadisticasComponent } from './estadisticas/estadisticas.component';
 import { DiasJugadosComponent } from './dias-jugados/dias-jugados.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
+import { BLE } from '@ionic-native/ble/ngx';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { TutorialComponent } from './tutorial/tutorial.component';
       Tab1PageModule,
     ],
   providers: [
+    BLE,
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }

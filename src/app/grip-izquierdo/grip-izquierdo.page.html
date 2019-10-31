@@ -1,9 +1,19 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>grip-izquierdo</ion-title>
-  </ion-toolbar>
-</ion-header>
+  <ion-toolbar class="GripIzquierdo">
+      <ion-title >GUANTE IZQUIERDO</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-<ion-content>
+  <ion-label >Presiona la zona con la que deseas interactuar</ion-label>
 
-</ion-content>
+  <ion-content text-center fullscreen>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+      <img src="../assets/Izquierda.jpg" />
+  
+      <ion-button class="Excellent" routerLink='/pulgar-i' text-center shape="round" color="success">Pulgar </ion-button>
+      <ion-button class="Warning"routerLink='/indice-i' text-center shape="round"    color="warning">Indice </ion-button>
+      <ion-button class="Excellent"routerLink='/menique-i' text-center shape="round" color="success">Meñique</ion-button>
+      <ion-button class="Bad"routerLink='/palma-i' text-center shape="round"         color="danger">Palma  </ion-button>
+  </ion-content>

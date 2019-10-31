@@ -27,3 +27,4 @@ const routes: Routes = [
   declarations: [HistorialPage]
 })
 export class HistorialPageModule {}
+

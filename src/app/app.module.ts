@@ -12,7 +12,6 @@ import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 import { Tab1PageModule } from './tab1/tab1.module';
 import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
 import { RegistroComponent } from './registro/registro.component';
-import { ConexionesComponent } from './conexiones/conexiones.component';
 import { MenuComponent } from './menu/menu.component';
 import { HoyComponent } from './hoy/hoy.component';
 import { EstadisticasComponent } from './estadisticas/estadisticas.component';
@@ -26,7 +25,6 @@ import { BLE } from '@ionic-native/ble/ngx';
     BienvenidaComponent,
     InicioSesionComponent,
     RegistroComponent,
-    ConexionesComponent,
     MenuComponent,
     HoyComponent,
     EstadisticasComponent,
@@ -41,9 +39,9 @@ import { BLE } from '@ionic-native/ble/ngx';
       Tab1PageModule,
     ],
   providers: [
-    BLE,
     StatusBar,
     SplashScreen,
+    BLE,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

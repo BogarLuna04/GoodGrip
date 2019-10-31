@@ -33,7 +33,7 @@
   </ion-list>
     <ion-button class="boton" [routerLink]="['/menu']" expand="block" fill="outline">Seleccionar</ion-button>
 </div>-->
-
+<!--
 <ion-header>
     <ion-toolbar>
       <ion-title style="text-align: left">
@@ -45,7 +45,25 @@
     </ion-toolbar>
   
   </ion-header>
-  
+  -->
+  <ion-header>
+      <ion-toolbar class = "head">
+        <ion-buttons  slot = "start">
+          <ion-back-button text="" icon="arrow-back"></ion-back-button>
+        </ion-buttons>
+        <ion-title class="titulo" >Conexiones</ion-title>
+        <ion-buttons  slot = "end">
+            <ion-button (click)="Scan()" slot="end">
+                <ion-icon name="Bluetooth"></ion-icon>Scan
+              </ion-button>
+          </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    
+
+
+
+
   <ion-content>
       
     <ion-list>

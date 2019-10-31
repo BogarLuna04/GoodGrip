@@ -14,11 +14,16 @@
     color: #ffffff;
     }
 .head{
-    height: 15vh;
-    width: 100vw;
-    padding-top: 2%;
-    background: #c1daeb;
-}
+        --background: #c1daeb;
+        height: 10vh;
+        width: 100vw;
+        padding-top: 2%;
+    }
+.titulo{
+        font-size: 30px;
+        --background:#ffffff;
+        --color:#000000;
+    }
 .imagen{
     background: #c1daeb;
     height: 6vh;

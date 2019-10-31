@@ -1,9 +1,12 @@
-<div>
-  <div class="head" style="text-align: center;">
-    <!--<img class="imagen" src="assets/img/usuario.jpg" />    -->  
-    <h1 class="head"> Historial</h1>
-  </div>
-</div>
+<ion-header>
+    <ion-toolbar class = "head">
+      <ion-buttons  slot = "start">
+        <ion-back-button text="" icon="arrow-back"></ion-back-button>
+      </ion-buttons>
+      <ion-title class="titulo" >Historial</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
 
 <ion-content class="ion-padding">
   <ion-row>
@@ -23,7 +26,7 @@
     </ion-col>
 
   <!--View month title-->
-  <ion-col size="8"   class="ion-text-center">
+  <ion-col size="8"   class="ion-text-center" font-sie>
       <ion-text >{{ viewTitle }}</ion-text>
     </ion-col>
   

@@ -1,7 +1,7 @@
 <div>
   <div class="head" style="text-align: center;">
     <!--<img class="imagen" src="assets/img/usuario.jpg" />    -->  
-    <h1 class="head">Historial</h1>
+    <h1 class="head"> Historial</h1>
   </div>
 </div>
 
@@ -9,10 +9,10 @@
   <ion-row>
     <!--Chage the displayed calendar mode-->
     <ion-col size="6">
-      <ion-button expand="block" (click) = "changeMode('month')">Month</ion-button>
+      <ion-button expand="block" [color]="calendar.mode == 'month' ? 'primary' : 'secondary'" (click) = "changeMode('month')">Month</ion-button>
     </ion-col>
     <ion-col size="6">
-      <ion-button expand="block" (click) = "changeMode('week')">Week</ion-button>
+      <ion-button expand="block" [color]="calendar.mode == 'week' ? 'primary' : 'secondary'" (click) = "changeMode('week')">Week</ion-button>
     </ion-col>
 
   <!--Move back one screen of the slides-->
@@ -23,9 +23,10 @@
     </ion-col>
 
   <!--View month title-->
-    <ion-col size="8" class="ion-text-center">
-      <ion-text ion-button block clear>{{ viewTitle }}</ion-text>
+  <ion-col size="8"   class="ion-text-center">
+      <ion-text >{{ viewTitle }}</ion-text>
     </ion-col>
+  
   
   <!--Move forward one screen of the slides-->
   <ion-col size="2" class="ion-text-right">
@@ -35,13 +36,24 @@
   </ion-col>
   </ion-row>
  
+  <ng-template #template let-view="view" let-row="row" let-col="col">
+      <div class="calendar-day {{ view.dates[row*7+col].events[0]?.color }}">
+        {{view.dates[row*7+col].label}}
+      </div>
+    </ng-template>
+
   <calendar
+  
    [eventSource]="eventSource"
    [calendarMode]="calendar.mode"
    [currentDate]="calendar.currentDate"
    [showEventDetail]="false"
+   [monthviewDisplayEventTemplate]="template"
+   (onTitleChanged)="onViewTitleChanged($event)"
+  
    step = "30"
-   startingDayWeek = "1">
+   startingDayWeek = "1"
+   >
   </calendar>
 
 </ion-content>

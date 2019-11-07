@@ -11,10 +11,8 @@ import { AppComponent } from './app.component';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 import { Tab1PageModule } from './tab1/tab1.module';
 import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
-import { RegistroComponent } from './registro/registro.component';
 import { MenuComponent } from './menu/menu.component';
 import { HoyComponent } from './hoy/hoy.component';
-import { EstadisticasComponent } from './estadisticas/estadisticas.component';
 import { DiasJugadosComponent } from './dias-jugados/dias-jugados.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
 import { BLE } from '@ionic-native/ble/ngx';
@@ -24,10 +22,8 @@ import { BLE } from '@ionic-native/ble/ngx';
     AppComponent,
     BienvenidaComponent,
     InicioSesionComponent,
-    RegistroComponent,
     MenuComponent,
     HoyComponent,
-    EstadisticasComponent,
     DiasJugadosComponent,
     TutorialComponent,
   ],

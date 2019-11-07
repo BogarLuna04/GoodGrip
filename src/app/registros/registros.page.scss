@@ -1,3 +1,6 @@
+.label1{
+    font-size: 25px;
+}
 .bienvenida{
     width: 100vw;
     height: 100vh;
@@ -7,10 +10,12 @@
     /*position: relative;
     width: 60%;
     height: 5vh;
-    top: 10%;
-    
+    top: 10%;*/
+    display: block;
     margin-left: auto;
-    margin-right: auto;*/
+    margin-right: auto;
+    width: 70%;
+    font-size: 22px;
     background: #c1daeb; 
     color: #ffffff;
     }

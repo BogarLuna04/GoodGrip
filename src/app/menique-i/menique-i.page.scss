@@ -1,14 +1,59 @@
 .Excellent{
     color: green;
-    font-size: 60px;
+    font-size: 90px;
+    position: absolute;
+    left:   38%;
+    top:    78%;
 }
 
 .Warning{
     color: orange;
-    font-size: 60px;
+    font-size: 90px;
+    position: absolute;
+    left:   38%;
+    top:    78%;
 }
 
 .Bad{
     color: red;
-    font-size: 60px;
+    font-size: 90px;
+    position: absolute;
+    left:   38%;
+    top:    78%;
+}
+
+.Cabecera{
+    --background: rgba(18, 18, 75, 0.842);
+    padding-top:  3%;
+}
+.Image{
+    position: absolute;
+    left:   45%;
+    top:    11%;
+    align-items: center;
+}
+.Texto{
+    position: absolute;
+    top:   60%;
+    right: 6%;
+    border: green 2px solid;
+    background: greenyellow;
+}
+
+.Zona{
+    position: absolute;
+    top:    23%;
+    right:  35%;
+    width:  6.5%;
+    height: 10%;
+    color: transparent;
+    transform: rotate(13deg);
+
+}
+.Borde{
+    font-size: 450px;
+    color: black;
+    position: absolute; 
+    top:  2%;
+    left: -10%;
 }

@@ -1,20 +1,36 @@
 <ion-header>
-  <ion-toolbar text-center>
-    <ion-title>Estadisticas</ion-title>
+  <ion-toolbar text-center class="Cabecera">
+      <ion-buttons  slot = "start">
+          <ion-back-button color="danger" text="" icon="arrow-back" ></ion-back-button>
+        </ion-buttons>
+    <ion-title class="Titulo">D E S E M P E Ñ O</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content style="text-align:center">
+<ion-content class="contenido">
+    <ion-label class="Subtitulo" >En esta sección puedes observar tu rendimiento en el grip izquierdo y derecho, 
+      y además tu tiempo de juego.</ion-label>
 
-    <ion-button routerLink='/grip-izquierdo' icon-left text-center shape="round" color="warning" >Grip Izquierdo
+    <ion-button color="danger" class="Button1" routerLink='/grip-izquierdo' icon-left text-center shape="round">
+    <p>
+    Guante<br>
+    Izquierdo
+    </p>   
         <ion-icon class="Left-Hand" slot="start" name="ios-hand"></ion-icon>
     </ion-button>
-    <ion-button routerLink='/grip-derecho' icon-left text-center shape="round" color="warning">Grip Derecho
+
+    <ion-button class="Button2" routerLink='/grip-derecho' icon-left text-center shape="round" color="danger">
+    <p>
+    Guante <br>
+    Derecho
+    </p>
         <ion-icon class="Right-Hand" slot="end" name="md-hand" ></ion-icon>
     </ion-button>
 
-    <ion-item class="my-item">
-      <ion-label class="my-item"> Tiempo de juego:</ion-label>
-      <ion-badge class="my-item">1h 15min</ion-badge>
+    <ion-icon class="Reloj" name="time" ></ion-icon>
+
+    <ion-item class="tiempo">
+      <ion-label > Tiempo de juego:</ion-label>
+      <ion-badge >1h 15min</ion-badge>
     </ion-item>
 </ion-content>

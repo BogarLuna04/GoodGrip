@@ -1,3 +1,8 @@
+.Cabecera{
+    --background: rgba(18, 18, 75, 0.842);
+    padding-top:  3%;
+}
+
 .Excellent{
     color: green;
     font-size: 60px;
@@ -5,10 +10,47 @@
 
 .Warning{
     color: orange;
-    font-size: 60px;
+    font-size: 90px;
+    position: absolute;
+    top:   78%;
+    right: 40%;
 }
 
 .Bad{
     color: red;
     font-size: 60px;
+}
+
+.Borde{
+    font-size: 450px;
+    color: black;
+    position: absolute; 
+    top:  2%;
+    left: -10%;
+}
+
+.Image{
+    position: absolute;
+    left:   40%;
+    top:    11%;
+    align-items: center;
+}
+
+.Texto{
+    position: absolute;
+    top:   60%;
+    right: 10%;
+    border: orange 2px solid;
+    background: yellow;
+}
+
+.Zona{
+    position: absolute;
+    top:    15%;
+    right:  47.5%;
+    width:  9%;
+    height: 13%;
+    color: transparent;
+    transform: rotate(5deg);
+
 }

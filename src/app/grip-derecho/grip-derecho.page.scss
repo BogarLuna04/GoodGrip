@@ -1,0 +1,81 @@
+.Titulo{
+    position: relative;
+    font-size: 100%;
+    --color:WHITE;
+    left:       0%;
+}
+
+.Cabecera{
+    --background: rgba(18, 18, 75, 0.842);
+}
+
+.Regreso{
+    --color: red;
+}
+
+.contenido{
+    border: black 3px solid;
+}
+
+.Subtitulo{
+    font-size: 85%;
+    position: absolute;
+    --color:#0a0707;
+    top:       5%;
+    right:     12%;
+    text-align: center;
+}
+
+.Image{
+    position: absolute;
+    height: 70%;
+    width:  100%;
+    right:  0%;
+    top:    10%;
+    align-items:center;
+}
+
+.Pulgar{
+    position: absolute;
+    top:    47.5%;
+    right:  13%;
+    width:  25%;
+    height: 6%;
+    margin: auto;  
+    color: green; 
+    transform: rotate(-19deg);
+}
+
+.Indice{
+    position: absolute;
+    top:   24%;
+    right: 24.2%;
+    width: 33%;
+    height: 5.5%;
+    margin: auto;  
+    color: orange; 
+    transform: rotate(94deg); 
+}
+
+.Palma{
+    position: absolute;
+    top:   41%;
+    right: 40%;
+    width: 45%;
+    height: 6%;
+    margin: auto;  
+    color:red; 
+    transform: rotate(-10.5deg); 
+}
+
+.Menique{
+    position: absolute;
+    top:   33%;
+    right: 76.7%;
+    width: 22%;
+    height: 3%;
+    margin: auto;  
+    color:red; 
+    transform: rotate(81.8deg); 
+}
+

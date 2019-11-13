@@ -1,0 +1,76 @@
+.Titulo{
+    position: relative;
+    font-size: 100%;
+    --color:white;
+    left:       0%;
+}
+
+.Cabecera{
+    --background: rgba(18, 18, 75, 0.842);
+}
+
+.Regreso{
+    --color: red;
+}
+
+.Subtitulo{
+    font-size: 85%;
+    position: absolute;
+    --color:#0a0707;
+    top:       15%;
+    right:     12%;
+    text-align: center;
+}
+
+.Image{
+    position: absolute;
+    height: 70%;
+    width:  95%;
+    right:  2%;
+    top:    20%;
+    align-items:center;
+}
+
+.Pulgar{
+    position: absolute;
+    top:    57%;
+    right:  65%;
+    width:  23%;
+    height: 7%;
+    margin: auto;  
+    color: green; 
+    transform: rotate(19deg);
+}
+
+.Indice{
+    position: absolute;
+    top:   35%;
+    right: 41%;
+    width: 32%;
+    height: 5%;
+    margin: auto;  
+    color: orange; 
+    transform: rotate(87.5deg); 
+}
+
+.Palma{
+    position: absolute;
+    top:   52%;
+    right: 18%;
+    width: 42%;
+    height: 6%;
+    margin: auto;  
+    color:red; 
+    transform: rotate(10.5deg); 
+}
+
+.Menique{
+    position: absolute;
+    top:   44%;
+    right: 4.0%;
+    width: 19%;
+    height: 3.5%;
+    margin: auto;  
+    color:green; 
+    transform: rotate(98.2deg); 
+}

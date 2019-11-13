@@ -5,10 +5,49 @@
 
 .Warning{
     color: orange;
-    font-size: 60px;
+    font-size: 90px;
+    position: absolute;
+    left:   40%;
+    top:    78%;
 }
 
 .Bad{
     color: red;
     font-size: 60px;
+}
+
+.Cabecera{
+    --background: rgba(18, 18, 75, 0.842);
+    padding-top:  3%;
+}
+.Image{
+    position: absolute;
+    left:   13%;
+    top:    10%;
+    align-items: center;
+}
+.Texto{
+    position: absolute;
+    top:   60%;
+    right: 8%;
+    border: orange 2px solid;
+    background: yellow;
+}
+
+.Zona{
+    position: absolute;
+    top:    15%;
+    right:  43.5%;
+    width:  9%;
+    height: 13%;
+    color: transparent;
+    transform: rotate(-5deg);
+
+}
+.Borde{
+    font-size: 450px;
+    color: black;
+    position: absolute; 
+    top:  2%;
+    left: -10%;
 }

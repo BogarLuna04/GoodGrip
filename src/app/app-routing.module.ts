@@ -35,7 +35,8 @@ const routes: Routes = [
   { path: 'palma-d', loadChildren: './palma-d/palma-d.module#PalmaDPageModule' },
   { path: 'palma-i', loadChildren: './palma-i/palma-i.module#PalmaIPageModule' },
   { path: 'conexiones', loadChildren: './conexiones/conexiones.module#ConexionesPageModule' },
-  { path: 'estadisticas', loadChildren: './estadisticas/estadisticas.module#EstadisticasPageModule' }
+  { path: 'estadisticas', loadChildren: './estadisticas/estadisticas.module#EstadisticasPageModule' },  { path: 'lista-grips', loadChildren: './lista-grips/lista-grips.module#ListaGripsPageModule' }
+
 
 
 

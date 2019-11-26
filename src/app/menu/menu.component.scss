@@ -4,32 +4,32 @@
     background: #1375B2; 
 }
 .boton{
-    position: relative;
-    width: 50%;
-    height: 10vh;
     top: 10%;
-    background: #43689c; 
-    border-radius: 8px;
-    display: block;
+    position: relative;
+    width:  45%;
+    height: 35%;
     margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    color: #ffffff;
+    margin-left: 2%;
+    left: 1.5%;
+    font-size: 160%;
+    color: black;
+    
     }
 .head{
-        --background: #c1daeb;
-        height: 10vh;
-        width: 100vw;
+        --background: rgba(18, 18, 75, 0.842);
         padding-top: 2%;
     }
 .titulo{
-        font-size: 30px;
-        --background:#ffffff;
-        --color:#000000;
+    color:white;
+    font-size: 200%;
     }
 .imagen{
     background: #c1daeb;
     height: 6vh;
     width: 7vw;
     margin-left: auto;
+}
+
+ion-content{
+    --ion-background-color: rgb(231, 230, 240);
 }

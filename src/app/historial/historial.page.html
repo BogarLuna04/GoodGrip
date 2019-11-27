@@ -58,6 +58,14 @@
    >
   </calendar>
 
-  <ion-button shape="round" class="boton" routerLink='/lista-grips'>Seleccionar día</ion-button>
+  <ion-content class="ListaDias">
+    <ion-list class="Borde">
+      <ion-item *ngFor="let item of lista"
+              [routerLink] = "item.redirectTo" detail><br>
+        <ion-label>{{ item.titulo }}</ion-label>
+        {{ item.description }}
+      </ion-item>
+    </ion-list>
+  </ion-content>
 
 </ion-content>

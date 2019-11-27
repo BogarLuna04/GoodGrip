@@ -45,7 +45,10 @@
     </ion-toolbar>
   
   </ion-header>
-  -->
+ 
+
+
+
   <ion-header>
       <ion-toolbar class = "head">
         <ion-buttons  slot = "start">
@@ -53,25 +56,50 @@
         </ion-buttons>
         <ion-title class="titulo" >Conexiones</ion-title>
         <ion-buttons  slot = "end">
-            <ion-button (click)="Scan()" slot="end">
+            <ion-button (click)="scan()" slot="end">
                 <ion-icon name="Bluetooth"></ion-icon>Scan
               </ion-button>
           </ion-buttons>
       </ion-toolbar>
     </ion-header>
-    
-
-
-
 
   <ion-content>
-      
     <ion-list>
-      <ion-card-content ion-item *ngFor="let device of devices">
-        <p>{{device.name || 'Unnamed'}}</p>
+    <button ion-item *ngFor="let device of devices" (click)="deviceSelected(device)">
+        <h2>{{device.name || 'Unnamed'}}</h2>
         <p>{{device.id}}</p>
         <p> RSSI: {{device.rssi}}</p>
-      </ion-card-content>
+    </button>
     </ion-list>
+  </ion-content>   -->
+
+
+  <ion-header>
+    <ion-toolbar class = "head">
+      <ion-buttons  slot = "start">
+        <ion-back-button text="" icon="arrow-back"></ion-back-button>
+      </ion-buttons>
+      <ion-title class="titulo" >Conexiones</ion-title>
+      <ion-buttons  slot = "end">
+          <ion-button (click)="scan()" slot="end">
+              <ion-icon name="Bluetooth"></ion-icon>Scan
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
   
+  <ion-content>
+     <ion-list> 
+      <button ion-item *ngFor="let device of devices" [routerLink]="['/detail']"  (click)="deviceSelected(device)">
+        <h2>{{ device.name || 'Unnamed' }}</h2>
+        <p>{{ device.id }}</p>
+        <p>RSSI: {{device.rssi}}</p>
+      </button>  
+     </ion-list> 
   </ion-content>
+  
+  <ion-footer>
+    <ion-toolbar>
+      <p>{{ statusMessage }}</p>
+    </ion-toolbar>
+  </ion-footer>

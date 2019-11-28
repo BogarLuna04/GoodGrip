@@ -3,7 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 import { Tab1Page } from './tab1/tab1.page';
 import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
-import { RegistroComponent } from './registro/registro.component';
+import { RegistrosPage } from './registros/registros.page';
 import { MenuComponent } from './menu/menu.component';
 import { HoyComponent } from './hoy/hoy.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
@@ -16,7 +16,7 @@ const routes: Routes = [
   {path:"login", component:BienvenidaComponent},
   {path:"tabs/tabs1", component:Tab1Page,},
   {path:"inicioSesion", component:InicioSesionComponent,},
-  {path:"registro", component:RegistroComponent,},
+  {path:"registro", component:RegistrosPage,},
   {path:"menu", component:MenuComponent,},
   {path:"hoy", component:HoyComponent,},
   {path:"tutorial", component:TutorialComponent,},

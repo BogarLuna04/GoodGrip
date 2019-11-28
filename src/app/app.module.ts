@@ -13,6 +13,7 @@ import { MenuComponent } from './menu/menu.component';
 import { HoyComponent } from './hoy/hoy.component';
 import { DiasJugadosComponent } from './dias-jugados/dias-jugados.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
+import { RegistrosPage } from './registros/registros.page';
 import { BLE } from '@ionic-native/ble/ngx';
 
 
@@ -25,6 +26,7 @@ import { BLE } from '@ionic-native/ble/ngx';
     HoyComponent,
     DiasJugadosComponent,
     TutorialComponent,
+    RegistrosPage,
     
   ],
   entryComponents: [],

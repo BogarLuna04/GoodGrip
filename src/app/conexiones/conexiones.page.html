@@ -82,7 +82,7 @@
       <ion-title class="titulo" >Conexiones</ion-title>
       <ion-buttons  slot = "end">
           <ion-button (click)="scan()" slot="end">
-              <ion-icon name="Bluetooth"></ion-icon>Scan
+              <ion-icon class="titulo" name="Bluetooth"></ion-icon>Scan
             </ion-button>
         </ion-buttons>
     </ion-toolbar>
@@ -90,7 +90,7 @@
   
   <ion-content>
      <ion-list> 
-      <button ion-item *ngFor="let device of devices" [routerLink]="['/detail']"  (click)="deviceSelected(device)">
+      <button ion-item *ngFor="let device of devices" [routerLink]="['/hoy']"  (click)="deviceSelected(device)">
         <h2>{{ device.name || 'Unnamed' }}</h2>
         <p>{{ device.id }}</p>
         <p>RSSI: {{device.rssi}}</p>

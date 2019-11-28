@@ -1,15 +1,72 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { Item, StoragesService } from '../services/storages.service';
+import { Platform, ToastController } from '@ionic/angular';
+import { List } from 'ionic-angular';
 
 @Component({
   selector: 'app-lista-grips',
   templateUrl: './lista-grips.page.html',
   styleUrls: ['./lista-grips.page.scss'],
 })
-export class ListaGripsPage implements OnInit {
+export class ListaGripsPage{
+  
+  items:Item[]=[];
+  newItem: Item = <Item>{};
+
+
+  @ViewChild('mylist', { static: true }) mylist: List;
+
+  constructor(private storageService: StoragesService, private plt: Platform, private toastController: ToastController) { 
+    this.plt.ready().then(() => {
+      this.loadItems();
+    });
+  }
+
+  addItem(){
+    this.newItem.modified=Date.now();
+    this.newItem.id=Date.now();
+ 
+    this.storageService.addItem(this.newItem).then(item=>{
+      this.newItem =<Item>{};
+      this.loadItems();
+    });
+  }
+
+  loadItems(){
+    this.storageService.getItem().then(items=>{
+      this.items= items;
+    });
+  }
+
+  updateItem(item:Item){
+    item.title= 'UPDATED: ${item.title}';
+    item.modified = Date.now();
+
+    this.storageService.updateItem(item).then(item=> {
+      this.showToast('Tiro actualizado');
+      this.mylist.closeSlidingItems();
+      this.loadItems();
+    });  }
+
+    deleteItem(item:Item){
+      this.storageService.delateItem(item.id).then(item => {
+        this.showToast('Tiro eliminado');
+        this.loadItems();
+      });
+    }
+
+    async showToast(msg){
+      const toast = await this.toastController.create({
+        message: msg, 
+        duration:2000
+      });
+      toast.present();
+    } 
+
 
   lista: Array<any> = [
     {
-      titulo: "Grip #1",
+      titulo: "Grip #1", 
       description: "MALO",
       icon: "radio-button-on",
       color: "red",
@@ -128,12 +185,6 @@ export class ListaGripsPage implements OnInit {
       redirectTo: "/estadisticas"
     }
   ]
-
-
-  constructor() { }
-
-  ngOnInit() {
-  }
 
 }
 

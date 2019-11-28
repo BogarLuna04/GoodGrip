@@ -15,6 +15,7 @@ import { DiasJugadosComponent } from './dias-jugados/dias-jugados.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
 import { RegistrosPage } from './registros/registros.page';
 import { BLE } from '@ionic-native/ble/ngx';
+import { IonicStorageModule } from '@ionic/storage';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { BLE } from '@ionic-native/ble/ngx';
       IonicModule.forRoot(),
       AppRoutingModule,
       Tab1PageModule,
+      IonicStorageModule.forRoot(),
 
     ],
   providers: [

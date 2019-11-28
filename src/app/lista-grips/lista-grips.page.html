@@ -5,8 +5,7 @@
           <ion-back-button text="" icon="arrow-back" color="danger"></ion-back-button>
         </ion-buttons>
         <ion-title class="Titulo">
-          <pre>Lista de grips:
-07-11-2019</pre>
+          <pre>Lista de grips</pre>
         </ion-title>
       </ion-toolbar>
     </ion-header>
@@ -14,16 +13,47 @@
   
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let item of lista"
-            [routerLink] = "item.redirectTo" detail><br>
+    <ion-item *ngFor="let i of lista"
+            [routerLink] = "i.redirectTo" detail><br>
       <p>
-      <ion-label>{{ item.titulo }}<br></ion-label>
+      <ion-label>{{ i.titulo }}<br></ion-label>
       
-      <ion-icon slot="start" [ngStyle]="{'color': item.color}" [name]="item.icon"></ion-icon>
-      {{ item.description }}
+      <ion-icon slot="start" [ngStyle]="{'color': i.color}" [name]="i.icon"></ion-icon>
+      {{ i.description }}
       </p>
   </ion-item>
+</ion-list>
+  <ion-item>
+    <ion-label position="fixed">Título</ion-label>
+    <ion-input [(ngModel)]="newItem.title"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label position="fixed">Valor</ion-label>
+      <ion-input [(ngModel)]="newItem.value"></ion-input>
+  </ion-item>  
   
-  </ion-list></ion-content>
+  <ion-button expand="full" (click)="addItem()">Tiro agregado</ion-button>
+  <ion-list #mylist>
+    <ion-list-header>
+      <ion-label>Mis Tiros</ion-label>
+    </ion-list-header>
+
+    <ion-item-sliding *ngFor="let item of items">
+
+      <ion-item>
+         <ion-label text-wrap>
+          <h3>{{ item.title }}</h3>
+          <ion-text color="secondary">
+            <p>{{ item.modified | date:'short'}}</p>
+          </ion-text>
+         </ion-label>
+      </ion-item>
+    <ion-item-options  side="end">
+      <ion-item-option color="secondary" (click)="updateItem(item)">Actualizar</ion-item-option>
+      <ion-item-option color="danger" (click)="deleteItem(item)">Eliminar</ion-item-option> 
+    </ion-item-options>
+   </ion-item-sliding>
+  </ion-list>
+</ion-content>
 
 

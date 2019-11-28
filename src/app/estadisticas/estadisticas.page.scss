@@ -1,0 +1,66 @@
+.Cabecera{
+    --background: rgba(18, 18, 75, 0.842);
+    padding-top:  3%;
+}
+
+.Titulo{
+    color:white;
+}
+
+.Button1{
+    position: absolute;
+    width: 42%;
+    right: 53%;
+    top:   25%;
+    height: 20%;
+    color: black;
+}
+.Button2{
+    position: absolute;
+    width:  42%;
+    height: 20%;
+    top:    25%;
+    right:  6%;
+    color: black;
+}
+
+.tiempo{
+    position: absolute;
+    top: 53%;
+    right: 17.5%;
+    width: 65%;
+    border: rgb(11, 11, 73) 2px solid;
+}
+
+.Subtitulo{
+    font-size: 85%;
+    position: absolute;
+    --color:#0a0707;
+    top:       10%;
+    right:     10%;
+    width:     80%;
+    text-align: justify;
+}
+
+.Left-Hand{
+    font-size: 32px;
+    color: black;
+}
+
+.Right-Hand{
+    font-size: 32px;
+    color: black;
+}
+
+.Reloj{
+    position: absolute;
+    color: rgb(161, 32, 32);
+    top: 62%;
+    font-size: 1800%;
+    right: 10%;
+}
+
+ion-content{
+    --ion-background-color: rgb(231, 230, 240);
+}
+

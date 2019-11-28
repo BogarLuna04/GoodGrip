@@ -7,7 +7,6 @@
     </ion-toolbar>
   </ion-header>
   
-
 <ion-content class="ion-padding">
   <ion-row>
     <!--Chage the displayed calendar mode-->
@@ -60,6 +59,13 @@
   >
   </calendar>
 
-  <ion-button expand="block" class = "ion-text-center boton1" routerLink='/estadisticas'>Seleccionar día</ion-button>
+  <ion-content class="ListaDias">
+    <ion-list class="Borde">
+      <ion-item *ngFor="let item of lista"
+              [routerLink] = "item.redirectTo" detail><br>
+        <ion-label>{{ item.titulo }}</ion-label>
+        {{ item.description }}
+      </ion-item>
+    </ion-list>
+  </ion-content>
 
-</ion-content>

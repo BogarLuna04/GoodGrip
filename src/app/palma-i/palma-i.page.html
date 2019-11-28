@@ -1,6 +1,9 @@
 <ion-header>
-  <ion-toolbar text-center>
-    <ion-title>Palma Izquierda</ion-title>
+  <ion-toolbar text-center class="Cabecera">
+      <ion-buttons  slot = "start">
+          <ion-back-button text="" icon="arrow-back" color="danger"></ion-back-button>
+        </ion-buttons>
+    <ion-title color="light">Palma Izquierda</ion-title>
     <ion-label ></ion-label>
   </ion-toolbar>
 </ion-header>
@@ -8,14 +11,15 @@
 <ion-content text-center>
 
     <p> 
-        <img src="../assets/palma-izquierda.jpg" />
+        <img src="../assets/palma-izquierda.jpg" class="Image">
     </p>
-
-    <p></p>
-    <p>¡Cuidado!</p>
-    <p>Presta mucha atención a esta posición</p>
-    <p>¡Tu puedes!</p>
-    <p></p>
-
-    <ion-icon class="Bad" name="checkmark-circle"></ion-icon>
+    <div class="Texto">
+      <p>¡Cuidado!</p>
+      <p>Presta mucha atención a esta posición</p>
+      <p>¡Tu puedes!</p>
+    </div>
+  
+    <ion-badge class="Zona" color="danger">.</ion-badge>
+    <ion-icon class="Borde" name="radio-button-off"></ion-icon>
+    <ion-icon class="Bad" name="close-circle-outline"></ion-icon>
 </ion-content>

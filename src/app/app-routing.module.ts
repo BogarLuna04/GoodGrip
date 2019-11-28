@@ -3,10 +3,11 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 import { Tab1Page } from './tab1/tab1.page';
 import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
+import { RegistroComponent } from './registro/registro.component';
 import { MenuComponent } from './menu/menu.component';
 import { HoyComponent } from './hoy/hoy.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
-
+ 
 const routes: Routes = [
   {
     path: 'tabs',
@@ -15,10 +16,12 @@ const routes: Routes = [
   {path:"login", component:BienvenidaComponent},
   {path:"tabs/tabs1", component:Tab1Page,},
   {path:"inicioSesion", component:InicioSesionComponent,},
+  {path:"registro", component:RegistroComponent,},
   {path:"menu", component:MenuComponent,},
   {path:"hoy", component:HoyComponent,},
   {path:"tutorial", component:TutorialComponent,},
-  {path:'',redirectTo:"/login",  pathMatch: 'full'},
+  
+  { path:'',redirectTo:"/login",  pathMatch: 'full'},
   { path: 'login1', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'historial', loadChildren: './historial/historial.module#HistorialPageModule' },
   { path: 'grip-derecho', loadChildren: './grip-derecho/grip-derecho.module#GripDerechoPageModule' },
@@ -33,7 +36,12 @@ const routes: Routes = [
   { path: 'palma-i', loadChildren: './palma-i/palma-i.module#PalmaIPageModule' },
   { path: 'conexiones', loadChildren: './conexiones/conexiones.module#ConexionesPageModule' },
   { path: 'estadisticas', loadChildren: './estadisticas/estadisticas.module#EstadisticasPageModule' },
-  { path: 'registro', loadChildren: './registros/registros.module#RegistrosPageModule' }
+  { path: 'lista-grips', loadChildren: './lista-grips/lista-grips.module#ListaGripsPageModule' }
+
+
+
+
+
 
 ];
 @NgModule({

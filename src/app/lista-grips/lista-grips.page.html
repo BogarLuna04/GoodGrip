@@ -1,0 +1,29 @@
+
+  <ion-header>
+      <ion-toolbar text-center class="Cabecera">
+        <ion-buttons  slot = "start">
+          <ion-back-button text="" icon="arrow-back" color="danger"></ion-back-button>
+        </ion-buttons>
+        <ion-title class="Titulo">
+          <pre>Lista de grips:
+07-11-2019</pre>
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+  
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of lista"
+            [routerLink] = "item.redirectTo" detail><br>
+      <p>
+      <ion-label>{{ item.titulo }}<br></ion-label>
+      
+      <ion-icon slot="start" [ngStyle]="{'color': item.color}" [name]="item.icon"></ion-icon>
+      {{ item.description }}
+      </p>
+  </ion-item>
+  
+  </ion-list></ion-content>
+
+

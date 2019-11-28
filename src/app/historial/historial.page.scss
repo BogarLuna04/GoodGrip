@@ -5,13 +5,10 @@
 }
 .calendario{height: 50vh;}
 .boton{
-    position: relative;
-    width: 60%;
-    height: 5vh;
-    top: 10%;
-    background: #43689c; 
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    width: 60%; 
+    top:   60%;
+    right: 20%;
     color: #ffffff;
     }
 .boton1{
@@ -43,4 +40,16 @@
     height: 6vh;
     width: 7vw;
     margin-left: auto;
+}
+
+.ListaDias{
+    position: absolute;
+    text-align: center;
+    top:    58%;
+    left:   0%;
+    height: 35%;
+}
+
+.Borde{
+    border: black 3px solid;
 }

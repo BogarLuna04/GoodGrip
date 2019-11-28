@@ -1,21 +1,25 @@
 <ion-header>
-  <ion-toolbar text-center>
-    <ion-title>Índice Izquierdo</ion-title>
-    <ion-label >(Sujeción del bastón)</ion-label>
+  <ion-toolbar text-center class="Cabecera">
+      <ion-buttons  slot = "start">
+          <ion-back-button text="" icon="arrow-back" color="danger"></ion-back-button>
+        </ion-buttons>
+    <ion-title color="light">Índice Izquierdo</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content text-center>
-
+    <ion-label ><br>(Sujeción del bastón)</ion-label>
     <p> 
-        <img src="../assets/indice-izquierdo.jpg" />
+        <img src="../assets/indice-izquierdo.jpg" class="Image">
     </p>
 
-    <p></p>
-    <p>¡Vas bien!</p>
-    <p>Tu posición es buena, pero puede mejorar</p>
-    <p>¡Sigue practicando!</p>
-    <p></p>
+    <div class="Texto">
+      <p>¡Vas muy bien!</p>
+      <p> Tu posición es buena, pero puede mejorar. </p>
+      <p>¡Sigue practicando! </p>
+    </div>
 
-    <ion-icon class="Warning" name="contrast"></ion-icon>
+  <ion-badge class="Zona" color="warning">.</ion-badge>
+  <ion-icon class="Warning" name="contrast"></ion-icon>
+  <ion-icon class="Borde" name="radio-button-off"></ion-icon>
 </ion-content>

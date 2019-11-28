@@ -1,6 +1,9 @@
 <ion-header>
-  <ion-toolbar text-center>
-    <ion-title>Meñique Izquierdo</ion-title>
+  <ion-toolbar text-center class="Cabecera">
+      <ion-buttons  slot = "start">
+          <ion-back-button text="" icon="arrow-back" color="danger"></ion-back-button>
+        </ion-buttons>
+    <ion-title color="light">Meñique Izquierdo</ion-title>
     <ion-label ></ion-label>
   </ion-toolbar>
 </ion-header>
@@ -8,14 +11,16 @@
 <ion-content text-center>
 
     <p> 
-        <img src="../assets/menique-izquierdo.jpg" />
+        <img src="../assets/menique-izquierdo.jpg" class="Image">
     </p>
 
-    <p></p>
+    <div class="Texto">
     <p>¡Felicidades!</p>
-    <p>Tu posición en el pulgar izquierdo es increíble</p>
+    <p>Tu posición en el pulgar izquierdo es increíble.</p>
     <p>¡Sigue así!</p>
-    <p></p>
+    </div>
 
-    <ion-icon class="Excellent" name="close-circle-outline"></ion-icon>
+  <ion-badge class="Zona" color="success">.</ion-badge>
+  <ion-icon class="Borde" name="radio-button-off"></ion-icon>
+  <ion-icon class="Excellent" name="checkmark-circle"></ion-icon>
 </ion-content>

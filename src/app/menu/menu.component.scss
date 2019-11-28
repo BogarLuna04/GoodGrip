@@ -4,33 +4,33 @@
     background: #ffffff; 
 }
 .boton{
+    top: 10%;
     position: relative;
-    width: 55%;
-    height: 12vh;
-    font-size: 20px;
-    top: 7%;
-    background: #43689c; 
-    border-radius: 20px;
-    display: block;
-    margin-top: 12%;
-    margin-left: auto;
-    margin-right: auto;
-    color: #ffffff;
+    width:  45%;
+    height: 35%;
+    margin-top: 5%;
+    margin-left: 2%;
+    left: 1.5%;
+    font-size: 155%;
+    color: black;
+    
+
     }
 .head{
-        --background: #c1daeb;
-        height: 10vh;
-        width: 100vw;
+        --background: rgba(18, 18, 75, 0.842);
         padding-top: 2%;
     }
 .titulo{
-        font-size: 30px;
-        --background:#ffffff;
-        --color:#000000;
+    color:white;
+    font-size: 200%;
     }
 .imagen{
     background: #c1daeb;
     height: 6vh;
     width: 7vw;
     margin-left: auto;
+}
+
+ion-content{
+    --ion-background-color: rgb(231, 230, 240);
 }

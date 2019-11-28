@@ -20,8 +20,8 @@ const routes: Routes = [
   {path:"menu", component:MenuComponent,},
   {path:"hoy", component:HoyComponent,},
   {path:"tutorial", component:TutorialComponent,},
-
-  {path:'',redirectTo:"/login",  pathMatch: 'full'},
+  
+  { path:'',redirectTo:"/login",  pathMatch: 'full'},
   { path: 'login1', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'historial', loadChildren: './historial/historial.module#HistorialPageModule' },
   { path: 'grip-derecho', loadChildren: './grip-derecho/grip-derecho.module#GripDerechoPageModule' },
@@ -35,7 +35,8 @@ const routes: Routes = [
   { path: 'palma-d', loadChildren: './palma-d/palma-d.module#PalmaDPageModule' },
   { path: 'palma-i', loadChildren: './palma-i/palma-i.module#PalmaIPageModule' },
   { path: 'conexiones', loadChildren: './conexiones/conexiones.module#ConexionesPageModule' },
-  { path: 'estadisticas', loadChildren: './estadisticas/estadisticas.module#EstadisticasPageModule' },  { path: 'lista-grips', loadChildren: './lista-grips/lista-grips.module#ListaGripsPageModule' }
+  { path: 'estadisticas', loadChildren: './estadisticas/estadisticas.module#EstadisticasPageModule' },
+  { path: 'lista-grips', loadChildren: './lista-grips/lista-grips.module#ListaGripsPageModule' }
 
 
 

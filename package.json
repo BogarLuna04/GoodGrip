@@ -35,7 +35,9 @@
     "cordova-plugin-bluetoothle": "^4.5.5",
     "cordova-sqlite-storage": "^3.4.0",
     "core-js": "^2.5.4",
+    "ionic-angular": "^3.9.9",
     "ionic2-calendar": "^0.5.7",
+    "request": "^2.79.0",
     "rxjs": "~6.5.1",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"

@@ -3,28 +3,44 @@
     height: 100vh;
     background: #1375B2; 
 }
+.head{
+    --background: #c1daeb;
+    height: 10vh;
+    width: 100vw;
+    padding-top: 2%;
+}
+.titulo{
+    font-size: 30px;
+    --background:#ffffff;
+    --color:#000000;
+}
 .boton{
     position: relative;
-    width: 60%;
+    width: 70%;
     height: 5vh;
-    top: 10%;
-    background: #43689c; 
+    top: 0%;
+    background: #3880ff; 
+    border-radius: 8px;
+    display: block;
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
     color: #ffffff;
-    }
-.head{
-        --background: #c1daeb;
-        height: 10vh;
-        width: 100vw;
-        padding-top: 2%;
-    }
-.titulo{
-        font-size: 30px;
-    }
+    font-size: 22px;
+ } 
 .imagen{
     background: #c1daeb;
     height: 6vh;
     width: 7vw;
     margin-left: auto;
+}
+.icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    width: 90%;
+}
+.label1{
+    font-size: 25px;
 }
